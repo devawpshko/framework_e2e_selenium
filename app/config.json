@@ -1,0 +1,29 @@
+{
+  "dev": {
+    "users": [
+      "test_user_01@example.com",
+      "test_user_02@example.com",
+      "test_user_03@example.com"
+    ],
+    "app_url": "https://dev.example.com",
+    "api_url": "https://dev.api.example.com"
+  },
+  "stg": {
+    "users": [
+      "test_user_01@example.com",
+      "test_user_02@example.com",
+      "test_user_03@example.com"
+    ],
+    "app_url": "https://stg.example.com",
+    "api_url": "https://stg.api.example.com"
+  },
+  "prod": {
+    "users": [
+      "test_user_01@example.com",
+      "test_user_02@example.com",
+      "test_user_03@example.com"
+    ],
+    "app_url": "https://example.com",
+    "api_url": "https://api.example.com"
+  }
+}
