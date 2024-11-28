@@ -15,7 +15,7 @@ class MainPage:
     def get_row_result(self, row: WebElement) -> dict:
         name = row.find_element(*LocatorsMainPage.grid_row_name_rel).text
         count = row.find_element(*LocatorsMainPage.grid_row_count_rel).text
-        return {"name": name, "count": count}
+        return {"name": name, "count": int(count)}
 
     @allure.step("Get grid results")
     def get_grid_results(self) -> list[dict]:

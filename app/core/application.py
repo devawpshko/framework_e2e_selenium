@@ -1,6 +1,8 @@
 import json
 import os
 
+from core.assertion import CustomAssertions
+from core.base import CommonActions
 from pages import Pages
 
 
@@ -20,4 +22,6 @@ class Application:
         self.user_password = os.environ.get("USER_PASSWORD")
 
         # links
+        self.common = CommonActions(self)
+        self.assertion = CustomAssertions()
         self.page = Pages(self)
